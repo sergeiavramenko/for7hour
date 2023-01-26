@@ -1,0 +1,51 @@
+.navbar {
+    display: flex;
+    background-color: rgb(31, 30, 30);
+}
+.nav-list {
+    display: flex;
+}
+.nav-list a {
+    display:block ;
+    padding: 1em;
+    text-decoration: none;
+    color: white;
+
+}
+.nav-list a:hover {
+    background-color:rgb(75, 73, 73)
+}
+.nav-btn {
+    display: none;
+}
+
+@media (max-width:1000px) {
+    .nav-btn {
+    font-size: 2em;
+    padding-inline: 10px;
+    padding-bottom: 3px;
+    border: none;
+    background-color:rgb(31, 30, 30);
+    color:white;
+    display: block;
+    cursor: pointer;
+}
+    .nav-list {
+        display: none;
+    }
+    .nav-btn:hover {
+        background-color:blue;
+    }
+    .drop:hover .nav-list{
+        display: block;
+        position: absolute;
+              
+        right: 1px;
+        
+        background-color:aquamarine;
+    }
+    .navbar {
+        justify-content: space-between;
+    }
+
+}
